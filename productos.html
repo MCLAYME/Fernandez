@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="productos.css">
+    <meta name="description" content="Explora los productos de Exportaciones Fernández, incluyendo motos, autos y tractores.">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Productos</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <section>
+            <h2>Nuestros Productos</h2>
+            <div class="row productos-grid">
+                <div class="col-md-4">
+                    <div class="card" onclick="mostrarMasImagenes('motos')">
+                        <img src="moto.jpg" class="card-img-top" alt="Motos">
+                        <div class="card-body">
+                            <h5 class="card-title">Motos</h5>
+                            <p class="card-text">Modelos económicos y de alto rendimiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" onclick="mostrarMasImagenes('autos')">
+                        <img src="auto.jpg" class="card-img-top" alt="Autos">
+                        <div class="card-body">
+                            <h5 class="card-title">Autos</h5>
+                            <p class="card-text">Desde transporte personal hasta comercial.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" onclick="mostrarMasImagenes('tractores')">
+                        <img src="tractor.jpg" class="card-img-top" alt="Tractores">
+                        <div class="card-body">
+                            <h5 class="card-title">Tractores</h5>
+                            <p class="card-text">Diseñados para el trabajo agrícola pesado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="imagenes-adicionales" class="mt-4">
+            <h2>Más Imágenes</h2>
+            <div class="container">
+                <div class="row productos-grid" id="imagenes-container">
+                    <!-- Aquí se agregarán las imágenes adicionales dinámicamente -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2024 Exportaciones Fernández. Todos los derechos reservados.</p>
+        <nav>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-white" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li class="list-inline-item"><a class="text-white" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+        </nav>
+        <button onclick="scrollToTop()" class="btn btn-secondary mt-3">Regresar al inicio</button>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="productos.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Caja</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="control_caja.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Control de Caja</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="control_inventario.html">Inventario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <section id="carrusel-productos" class="mt-4">
+            <h2>Productos</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <!-- Indicadores dinámicos -->
+                </ol>
+                <div class="carousel-inner">
+                    <!-- Imágenes dinámicas -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="caja" class="mt-4">
+            <h2>Control de Caja</h2>
+            <div class="form-group">
+                <input type="text" id="buscar" class="form-control" placeholder="Buscar transacciones...">
+            </div>
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th>Categoría</th>
+                        <th>Ingreso</th>
+                        <th>Egreso</th>
+                        <th>Saldo</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarán las filas dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="agregar-producto" class="mt-4">
+            <h2>Agregar Producto</h2>
+            <form id="productoForm" class="form-inline">
+                <div class="form-group mb-2">
+                    <label for="fecha" class="sr-only">Fecha</label>
+                    <input type="date" id="fecha" class="form-control" required>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="descripcion" class="sr-only">Descripción</label>
+                    <input type="text" id="descripcion" class="form-control" placeholder="Descripción" required>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="categoria" class="sr-only">Categoría</label>
+                    <input type="text" id="categoria" class="form-control" placeholder="Categoría" required>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="ingreso" class="sr-only">Ingreso</label>
+                    <input type="number" id="ingreso" class="form-control" placeholder="Ingreso" required>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="egreso" class="sr-only">Egreso</label>
+                    <input type="number" id="egreso" class="form-control" placeholder="Egreso" required>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="saldo" class="sr-only">Saldo</label>
+                    <input type="number" id="saldo" class="form-control" placeholder="Saldo" required>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="imagen" class="sr-only">URL de la Imagen</label>
+                    <input type="file" id="imagen" class="form-control-file" accept="image/*">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Agregar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2024 Exportaciones Fernández. Todos los derechos reservados.</p>
+        <nav>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-white" href="historia.html">Acerca de la Empresa</a></li>
+                <li class="list-inline-item"><a class="text-white" href="#contact">Contacto</a></li>
+                <li class="list-inline-item"><a class="text-white" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li class="list-inline-item"><a class="text-white" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="control_caja.js" defer></script>
+</body>
+</html>

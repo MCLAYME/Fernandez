@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exportaciones Fernández - Inicio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos para el carrusel */
+    .carrusel {
+      position: relative;
+      max-width: 50%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .carrusel img {
+      width: 50%;
+      display: none;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carrusel img.active {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Botones de navegación del carrusel */
+    .carrusel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .carrusel-button.left {
+      left: 10px;
+    }
+
+    .carrusel-button.right {
+      right: 10px;
+    }
+
+    /* Estilos para los testimonios */
+    .testimonios {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 2em 0;
+    }
+
+    .testimonio {
+      width: 30%;
+      margin: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 1em;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .testimonio:hover {
+      transform: scale(1.05);
+    }
+
+    /* Sección de productos destacados */
+    .productos-destacados {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 2em 0;
+    }
+
+    .producto {
+      width: 30%;
+      margin: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+    }   
+
+    .producto img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Exportaciones Fernández</h1>
+    <p>Tu solución integral para motos, autos y tractores</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="historia.html">Historia</a></li>
+      <li><a href="inicio.html">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+
+  <!-- Carrusel de imágenes -->
+  <div class="carrusel">
+    <img src="moto.jpg" alt="Motos" class="active">
+    <img src="auto.jpg" alt="Autos">
+    <img src="tractor.jpg" alt="Tractores">
+    <button class="carrusel-button left" onclick="showPrevImage()">&#10094;</button>
+    <button class="carrusel-button right" onclick="showNextImage()">&#10095;</button>
+  </div>
+
+  <section>
+    <h2>Nuestros Productos Destacados</h2>
+    <div class="productos-destacados">
+      <div class="producto">
+        <img src="moto.jpg" alt="Moto">
+        <h3>Moto X1</h3>
+        <p>Precio: $5,000</p>
+      </div>
+      <div class="producto">
+ <img src="auto.jpg" alt="Auto">
+        <h3>Auto Y2</h3>
+        <p>Precio: $15,000</p>
+      </div>
+      <div class="producto">
+        <img src="tractor.jpg" alt="Tractor">
+        <h3>Tractor Z3</h3>
+        <p>Precio: $25,000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de testimonios -->
+  <section>
+    <h2>Testimonios</h2>
+    <div class="testimonios">
+      <div class="testimonio">
+        <p>"Excelente servicio y productos de alta calidad!"</p>
+        <p>- Juan Pérez</p>
+      </div>
+      <div class="testimonio">
+        <p>"Siempre confío en Exportaciones Fernández para mis necesidades." </p>
+        <p>- María López</p>
+      </div>
+      <div class="testimonio">
+        <p>"Gran atención al cliente y soporte postventa."</p>
+        <p>- Carlos García</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Nuestros Productos Destacados</h2>
+    <div class="productos-destacados">
+      <div class="producto">
+        <img src="moto.jpg" alt="Moto">
+        <h3>Moto X1</h3>
+        <p>Precio: $5,000</p>
+        <p>Descripción: La Moto X1 es perfecta para la ciudad y ofrece una gran eficiencia de combustible.</p>
+      </div>
+      <div class="producto">
+        <img src="auto.jpg" alt="Auto">
+        <h3>Auto Y2</h3>
+        <p>Precio: $15,000</p>
+        <p>Descripción: El Auto Y2 combina confort y tecnología avanzada para una experiencia de conducción excepcional.</p>
+      </div>
+      <div class="producto">
+        <img src="tractor.jpg" alt="Tractor">
+        <h3>Tractor Z3</h3>
+        <p>Precio: $25,000</p>
+        <p>Descripción: El Tractor Z3 es ideal para trabajos agrícolas, ofreciendo potencia y durabilidad.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <h2>Suscríbete a Nuestro Boletín</h2>
+    <form>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <button type="submit">Suscribirse</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2024 Exportaciones Fernández. Todos los derechos reservados.</p>
+    <nav>
+      <ul>
+        <li><a href="historia.html">Acerca de la Empresa</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+      </ul>
+    </nav>
+  </footer> 
+  <script src="script.js"></script>
+  <script>
+    // Script para el carrusel
+    let index = 0;
+    const images = document.querySelectorAll('.carrusel img');
+    const totalImages = images.length;
+
+    function showNextImage() {
+      images[index].classList.remove('active');
+      index = (index + 1) % totalImages;
+      images[index].classList.add('active');
+    }
+
+    function showPrevImage() {
+      images[index].classList.remove('active');
+      index = (index - 1 + totalImages) % totalImages;
+      images[index].classList.add('active');
+    }
+
+    setInterval(showNextImage, 3000); // Cambia la imagen cada 3 segundos
+  </script>
+</body>
+</html>
