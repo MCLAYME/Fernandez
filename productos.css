@@ -1,43 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-
-main {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    transition: all 0.5s;
-}
-
-section {
-    margin-bottom: 20px;
-}
+@import url('styles.css');
 
 .productos-grid {
     display: flex;
@@ -62,13 +23,7 @@ section {
     width: 100%;
     height: auto;
 }
-.child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
+
 .card-body {
     padding: 15px;
 }
@@ -81,24 +36,4 @@ section {
 .card-text {
     font-size: 1rem;
     color: #555;
-}
-
-footer {
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer .btn {
-    margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-    .productos-grid {
-        flex-direction: column;
-    }
 }
